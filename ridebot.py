@@ -7,7 +7,7 @@ from astropy import time
 driving_to = re.compile('driving to (rotunda|muller)(?: in)?(.*)')
 need_ride = re.compile('need ride to (rotunda|muller)(?: in)?(.*)')
 
-shelf = shelve.open('ridebot.shelf')  # NEVER DO THIS.  should not use global variables to store db-like objects
+#shelf = shelve.open('ridebot.shelf')  # NEVER DO THIS.  should not use global variables to store db-like objects
 shelf = {} # HACKHACK!
 
 DEFAULT_TIMESPAN = 15*u.min
